@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Olive Meals</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1b5e20">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+<img src="assets/logo.png" class="logo">
+<h2>Olive Meals</h2>
+</header>
+
+<div class="container">
+
+<h2>Meal Login</h2>
+
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="signup()" class="btn-secondary">Signup</button>
+<button onclick="login()" class="btn-primary">Login</button>
+
+<p id="userEmail"></p>
+
+<div class="card">
+<h3>Monthly Summary</h3>
+Used: <span id="used">0</span><br>
+Remaining: <span id="remaining">0</span>
+</div>
+
+<div class="card">
+<h3>Weekly Plan</h3>
+<div id="calendar"></div>
+</div>
+
+<div class="card">
+<h3>History</h3>
+<div id="history"></div>
+</div>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
